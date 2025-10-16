@@ -98,11 +98,12 @@ main>section:nth-child(1) {
     padding: 2rem;
 
     img {
+        background-color: var(--background-color);
         justify-self: center;
         border-radius: 15px;
         max-width: 70%;
         height: auto;
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.08);
     }
 
     &>div {
