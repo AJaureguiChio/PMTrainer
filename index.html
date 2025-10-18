@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div>
+        <div class="svg-text">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                 <path fill-rule="evenodd"
                     d="M2.25 13.5a8.25 8.25 0 0 1 8.25-8.25.75.75 0 0 1 .75.75v6.75H18a.75.75 0 0 1 .75.75 8.25 8.25 0 0 1-16.5 0Z"
@@ -27,15 +27,14 @@
 
         <nav>
             <span>Inicio</span>
-            <a href="#">Examenes</a>
-            <a href="#">Repasos</a>
-            <a href="#">Recursos</a>
+            <a href="examenes.html">Examenes</a>
+            <a href="repasos.html">Repasos</a>
+            <a href="recursos.html">Recursos</a>
         </nav>
     </header>
 
     <main>
-
-        <section>
+        <section class="hero-section">
             <div>
                 <h1>Domina <span>PMBOK y Scrum</span> con PMTrainer</h1>
                 <p>
@@ -48,7 +47,7 @@
         </section>
 
         <section>
-            <header>
+            <header class="info-text">
                 <h3>¿Por qué elegir PMTrainer?</h3>
                 <p>
                     Nuestra plataforma
@@ -57,7 +56,7 @@
                 </p>
             </header>
 
-            <footer>
+            <footer class="info-cards">
                 <article>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#4a90e2">
@@ -92,21 +91,22 @@
             </footer>
         </section>
 
-        <section>
+        <section class="intro-links-section">
             <header>
-                <article>
+                <article class="info-text">
                     <h3>¡Listo para empezar!</h3>
                     <p>Elige una de las metodologías y pon aprueba tus conocimientos ahora mismo</p>
                 </article>
 
-                <nav>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                            width="24px" fill="#4a90e2">
+                <nav class="nav-buttons">
+                    <a href="#" class="svg-text white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#4a90e2">
                             <path
                                 d="M560-360q17 0 29.5-12.5T602-402q0-17-12.5-29.5T560-444q-17 0-29.5 12.5T518-402q0 17 12.5 29.5T560-360Zm-30-128h60q0-29 6-42.5t28-35.5q30-30 40-48.5t10-43.5q0-45-31.5-73.5T560-760q-41 0-71.5 23T446-676l54 22q9-25 24.5-37.5T560-704q24 0 39 13.5t15 36.5q0 14-8 26.5T578-596q-33 29-40.5 45.5T530-488ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
                         </svg> Iniciar Examen de PMBOK</a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                            width="24px" fill="#4a90e2">
+
+                    <a href="#" class="svg-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#4a90e2">
                             <path
                                 d="m216-160-56-56 384-384H440v80h-80v-160h233q16 0 31 6t26 17l120 119q27 27 66 42t84 16v80q-62 0-112.5-19T718-476l-40-42-88 88 90 90-262 151-40-69 172-99-68-68-266 265Zm-96-280v-80h200v80H120ZM40-560v-80h200v80H40Zm739-80q-33 0-57-23.5T698-720q0-33 24-56.5t57-23.5q33 0 57 23.5t24 56.5q0 33-24 56.5T779-640Zm-659-40v-80h200v80H120Z" />
                         </svg> Iniciar Examen de Scrum</a>
@@ -114,9 +114,21 @@
             </header>
 
             <footer>
-                <h3>¿Necesitas un repaso rápido?</h3>
-                <p>Ideal para reforzar conceptos de manera ágil antes de un examen completo</p>
-                <a href="#">Acceso al Repaso Rápido</a>
+                <article class="info-text">
+                    <h4>¿Necesitas un repaso rápido?</h4>
+                    <p>Ideal para reforzar conceptos de manera ágil antes de un examen completo</p>
+                </article>
+
+                <nav class="nav-buttons">
+                    <a href="#" class="svg-text white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="currentColor"
+                            class="icon icon-tabler icons-tabler-filled icon-tabler-bolt">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M13 2l.018 .001l.016 .001l.083 .005l.011 .002h.011l.038 .009l.052 .008l.016 .006l.011 .001l.029 .011l.052 .014l.019 .009l.015 .004l.028 .014l.04 .017l.021 .012l.022 .01l.023 .015l.031 .017l.034 .024l.018 .011l.013 .012l.024 .017l.038 .034l.022 .017l.008 .01l.014 .012l.036 .041l.026 .027l.006 .009c.12 .147 .196 .322 .218 .513l.001 .012l.002 .041l.004 .064v6h5a1 1 0 0 1 .868 1.497l-.06 .091l-8 11c-.568 .783 -1.808 .38 -1.808 -.588v-6h-5a1 1 0 0 1 -.868 -1.497l.06 -.091l8 -11l.01 -.013l.018 -.024l.033 -.038l.018 -.022l.009 -.008l.013 -.014l.04 -.036l.028 -.026l.008 -.006a1 1 0 0 1 .402 -.199l.011 -.001l.027 -.005l.074 -.013l.011 -.001l.041 -.002z" />
+                        </svg>
+                        Acceso al Repaso Rápido</a>
+                </nav>
             </footer>
         </section>
     </main>
