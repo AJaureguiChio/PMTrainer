@@ -19,6 +19,11 @@ body {
     min-height: 100vh;
 }
 
+.svg-header {
+    height: 2rem;
+    width: 2rem;
+}
+
 body>header {
     background-color: var(--background-color);
     display: flex;
@@ -28,16 +33,9 @@ body>header {
     border-bottom: 2px solid var(--hr);
     width: 100%;
 
-    div {
-        svg {
-            height: 2rem;
-            width: 2rem;
-        }
-
-        h1 {
-            font-size: 1rem;
-            font-weight: 700;
-        }
+    div>h1 {
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     nav {
@@ -145,14 +143,8 @@ body>footer {
 
 
 .hero-section {
-    background-color: var(--background-color-alt);
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1em;
-    padding: 2rem;
-    margin-bottom: 2rem;
 
     img {
         background-color: var(--background-color);
@@ -300,15 +292,95 @@ body>footer {
         margin-bottom: 1em;
         color: var(--secondary-text-color);
 
-        span{
+        span {
             color: var(--primary-color);
             font-weight: 500;
         }
     }
 }
 
-.center{
+
+.background-alt {
+    background-color: var(--background-color-alt);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    margin: 1em;
+
+    input {
+        border: 2px solid var(--hr);
+        border-radius: 10px;
+        background-color: var(--background-color-alt);
+        padding: 1em;
+        width: 70%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    }
+
+    input:hover {
+        border: 2px solid var(--background-color-dark);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+    }
+}
+
+.contenedor-recursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 2em;
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-color-alt);
+        padding: 1em;
+        text-align: center;
+        width: 250px;
+        border: 1px solid var(--background-color-alt);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        gap: 1rem;
+
+        .svg-text {
+            display: flex;
+            flex-direction: row;
+
+            svg {
+                background-color: var(--primary-background-color);
+                height: 3rem;
+                width: 3rem;
+                padding: .8em;
+                border-radius: 40%;
+            }
+
+            h4 {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: .8rem;
+            font-weight: 400;
+            color: var(--secondary-text-color);
+        }
+    }
+
+    a:hover {
+        border: 1px solid var(--background-color-dark);
+        background-color: var(--background-color);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.center {
     align-items: center;
     text-align: center;
     align-content: center;
+    justify-content: center;
 }
