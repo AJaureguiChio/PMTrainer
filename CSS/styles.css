@@ -101,12 +101,12 @@ body>footer {
             border: 2px solid var(--primary-color);
         }
 
-        
+
         &:nth-child(2) {
             background-color: var(--background-color-dark);
             border: 2px solid var(--background-color-dark);
             color: var(--text-color);
-            
+
             svg {
                 fill: var(--text-color);
             }
@@ -149,7 +149,7 @@ body>footer {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -162,27 +162,6 @@ body>footer {
         height: auto;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.08);
     }
-
-    &>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: .5em;
-
-            span {
-                color: var(--primary-color);
-            }
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 1em;
-        }
-    }
 }
 
 .info-text {
@@ -194,7 +173,7 @@ body>footer {
     width: 100%;
     padding: 2em;
     font-weight: 700;
-    
+
     h3 {
         font-size: 1.5rem;
     }
@@ -243,7 +222,7 @@ body>footer {
 
             margin-bottom: .5em;
         }
-        
+
         p {
             margin: 0;
             font-size: .8rem;
@@ -278,12 +257,12 @@ body>footer {
         text-align: center;
         border-top: 1px solid var(--hr);
 
-        .nav-buttons{
-            a{
+        .nav-buttons {
+            a {
                 background-color: var(--green-color);
                 border: 2px solid var(--green-color);
 
-                svg{
+                svg {
                     width: 1.5rem;
                     height: 1.5rem;
                 }
@@ -299,4 +278,37 @@ body>footer {
             }
         }
     }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: .5em;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 1em;
+        color: var(--secondary-text-color);
+
+        span{
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+    }
+}
+
+.center{
+    align-items: center;
+    text-align: center;
+    align-content: center;
 }
