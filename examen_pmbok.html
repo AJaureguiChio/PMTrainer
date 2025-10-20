@@ -3,22 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Examen PMBOK 7ª Edición</title>
+  <title>Examen PMBOK</title>
   <link rel="stylesheet" href="CSS/examen_pmbok.css">
 </head>
 <body>
-  <div class="exam-container">
+  <div class="container">
     <h1>Examen PMBOK</h1>
 
+    <!-- Barra de progreso -->
     <div class="progress-container">
       <div id="progress-bar"></div>
+      <p id="progress-text">Pregunta 1 de 20</p>
     </div>
 
+    <!-- Contenedor de preguntas -->
     <div id="question-container" class="card">
-      <!-- Preguntas dinámicas -->
+      <h2 id="question-text"></h2>
+      <div id="options-container"></div>
+      <button id="next-btn" class="btn" disabled>Siguiente</button>
     </div>
 
-    <button id="next-btn" class="btn" disabled>Siguiente Pregunta</button>
+    <!-- Contenedor del resultado final -->
+    <div id="result-container" class="hidden">
+      <h2>Resultado Final</h2>
+      <p id="score"></p>
+
+      <!-- Contenedor scrollable para retroalimentación -->
+      <div id="incorrect-answers-container">
+        <div id="incorrect-answers"></div>
+      </div>
+
+      <!-- Botones al final -->
+      <div class="result-buttons">
+        <button id="restart-btn" class="btn">Reiniciar Examen</button>
+        <a href="examenes.html" class="btn">Regresar</a>
+      </div>
+    </div>
   </div>
 
   <script src="JavaScript/examen_pmbok.js"></script>
