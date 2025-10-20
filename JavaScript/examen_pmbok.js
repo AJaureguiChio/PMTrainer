@@ -8,7 +8,7 @@ const questions = [
       "Medir el rendimiento del equipo"
     ],
     answer: 1,
-    feedback: "Correcto. El PMBOK busca establecer estándares y buenas prácticas para la gestión de proyectos reconocidas por el PMI."
+    feedback: "El PMBOK busca establecer estándares y buenas prácticas para la gestión de proyectos reconocidas por el PMI."
   },
   {
     question: "¿Qué significa PMI en relación con el PMBOK?",
