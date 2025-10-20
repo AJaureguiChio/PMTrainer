@@ -142,7 +142,6 @@ body>footer {
     }
 }
 
-
 .hero-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -187,6 +186,8 @@ body>footer {
 .info-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-content: center;
+    align-items: center;
     gap: 2em;
     padding: 2em;
 
@@ -289,6 +290,7 @@ body>footer {
     }
 
     p {
+        width: 70%;
         font-size: 1rem;
         margin-bottom: 1em;
         color: var(--secondary-text-color);
@@ -299,7 +301,6 @@ body>footer {
         }
     }
 }
-
 
 .background-alt {
     background-color: var(--background-color-alt);
