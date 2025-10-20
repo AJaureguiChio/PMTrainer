@@ -390,3 +390,78 @@ body>footer {
     text-align: center;
     align-content: center;
 }
+
+.exam-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+.exam-card {
+    background-color: var(--background-color-alt);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.icon-circle {
+    background-color: var(--primary-background-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color);
+}
+
+.exam-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.exam-card p {
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.exam-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.exam-button:hover {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.exam-button .arrow {
+    width: 18px;
+    height: 18px;
+}
