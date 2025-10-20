@@ -1,89 +1,149 @@
+/* ======== ESTILOS GENERALES ======== */
 body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f5f7fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #4a90e2, #6fc3ff);
+  color: #333;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.exam-container {
-  width: 600px;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
+.container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
   text-align: center;
-  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto; /* se adapta al contenido */
 }
 
-.progress-container {
-  background: #e0e0e0;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-#progress-bar {
-  width: 0%;
-  height: 10px;
-  background-color: #007bff;
-  transition: width 0.3s;
+/* ======== TITULOS ======== */
+h1 {
+  color: #0056b3;
+  margin-bottom: 10px;
 }
 
 .card {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  margin-top: 20px;
 }
 
+/* ======== BARRA DE PROGRESO ======== */
+.progress-container { 
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+#progress-bar {
+  height: 10px;
+  background-color: #4a90e2;
+  width: 5%;
+  transition: width 0.3s ease;
+}
+
+#progress-text {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ======== OPCIONES ======== */
 .option {
-  background: #f0f0f0;
+  display: block;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
   margin: 8px 0;
-  padding: 12px;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.2s ease;
 }
 
 .option:hover {
-  background: #dce3ff;
+  background-color: #e8f3ff;
 }
 
 .option.correct {
-  background-color: #c6f6d5;
-  border: 1px solid #38a169;
+  background-color: #c8f7c5;
+  border-color: #2ecc71;
 }
 
 .option.incorrect {
-  background-color: #fed7d7;
-  border: 1px solid #e53e3e;
+  background-color: #f8c6c6;
+  border-color: #e74c3c;
 }
 
-.explanation {
+/* ======== FEEDBACK ======== */
+.feedback {
   margin-top: 15px;
-  background-color: #e6fffa;
-  border-left: 5px solid #38b2ac;
   padding: 10px;
-  border-radius: 6px;
+  background-color: #f1f8ff;
+  border-left: 5px solid #4a90e2;
+  text-align: left;
+  font-size: 14px;
 }
 
-.btn {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
+/* ======== BOTONES ======== */
+.btn, a.btn {
+  background-color: #4a90e2;
+  color: white;
   border: none;
   border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+
+  width: 180px; 
+  text-align: center;
 }
 
-.btn:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.btn:hover, a.btn:hover {
+  background-color: #357ab8;
+}
+
+/* ======== RESULTADO FINAL ======== */
+#result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#incorrect-answers-container {
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+/* ======== OCULTAR ELEMENTOS ======== */
+.hidden {
+  display: none !important;
 }
