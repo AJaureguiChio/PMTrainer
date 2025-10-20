@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Examen PMBOK</title>
-  <link rel="stylesheet" href="CSS/examen_pmbok.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMTrainer - Examen PMBOK</title>
+<link rel="stylesheet" href="CSS/styles.css"> <!-- tu CSS general -->
+<link rel="stylesheet" href="CSS/examen_pmbok.css"> <!-- CSS del examen -->
 </head>
 <body>
-  <div class="container">
-    <h1>Examen PMBOK</h1>
+<header>
+    <div class="svg-text">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-header">
+        <path fill-rule="evenodd"
+              d="M2.25 13.5a8.25 8.25 0 0 1 8.25-8.25.75.75 0 0 1 .75.75v6.75H18a.75.75 0 0 1 .75.75 8.25 8.25 0 0 1-16.5 0Z"
+              clip-rule="evenodd" />
+        <path fill-rule="evenodd"
+              d="M12.75 3a.75.75 0 0 1 .75-.75 8.25 8.25 0 0 1 8.25 8.25.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75V3Z"
+              clip-rule="evenodd" />
+    </svg>
+    <h1>PMTrainer</h1>
+</div>
 
-    <!-- Barra de progreso -->
-    <div class="progress-container">
-      <div id="progress-bar"></div>
-      <p id="progress-text">Pregunta 1 de 20</p>
-    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <span>Exámenes</span>
+        <a href="recursos.html">Recursos</a>
+    </nav>
+</header>
 
-    <!-- Contenedor de preguntas -->
-    <div id="question-container" class="card">
-      <h2 id="question-text"></h2>
-      <div id="options-container"></div>
-      <button id="next-btn" class="btn" disabled>Siguiente</button>
-    </div>
+<main>
+    <section class="center">
+        <div class="container" id="question-container">
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+                <span id="progress-text">Pregunta 1 de X</span>
+            </div>
 
-    <!-- Contenedor del resultado final -->
-    <div id="result-container" class="hidden">
-      <h2>Resultado Final</h2>
-      <p id="score"></p>
+            <h2 id="question-text">Pregunta aquí</h2>
+            <div id="options-container" class="card">
+                <!-- Opciones generadas por JS -->
+            </div>
 
-      <!-- Contenedor scrollable para retroalimentación -->
-      <div id="incorrect-answers-container">
-        <div id="incorrect-answers"></div>
-      </div>
+            <button id="next-btn" class="btn">Siguiente</button>
+        </div>
 
-      <!-- Botones al final -->
-      <div class="result-buttons">
-        <button id="restart-btn" class="btn">Reiniciar Examen</button>
-        <a href="examenes.html" class="btn">Regresar</a>
-      </div>
-    </div>
-  </div>
+        <div id="result-container" class="container hidden">
+            <h2 id="score">Tu puntaje final: 0</h2>
+            <div id="incorrect-answers-container" class="card">
+                <div id="incorrect-answers"></div>
+            </div>
+            <div class="result-buttons">
+                <button id="restart-btn" class="btn">Reiniciar examen</button>
+                <a href="index.html" class="btn">Volver al inicio</a>
+            </div>
+        </div>
+    </section>
+</main>
 
-  <script src="JavaScript/examen_pmbok.js"></script>
+<footer>
+    <small>&copy; 2025 PMTrainer. Todos los derechos reservados.</small>
+</footer>
+
+<script src="JavaScript/examen_pmbok.js"></script>
 </body>
 </html>
