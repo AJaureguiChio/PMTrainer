@@ -7,8 +7,8 @@ const questions = [
       "Enseñar programación",
       "Medir el rendimiento del equipo"
     ],
-    correct: 1,
-    explanation: "El PMBOK busca establecer estándares y buenas prácticas para la gestión de proyectos reconocidas por el PMI."
+    answer: 1,
+    feedback: "Correcto. El PMBOK busca establecer estándares y buenas prácticas para la gestión de proyectos reconocidas por el PMI."
   },
   {
     question: "¿Qué significa PMI en relación con el PMBOK?",
@@ -18,20 +18,25 @@ const questions = [
       "Performance Management Index",
       "Program Management Information"
     ],
-    correct: 0,
-    explanation: "El PMI es la organización que publica y actualiza la guía PMBOK, encargada de promover las mejores prácticas en gestión de proyectos."
+    answer: 0,
+    feedback: "El PMI es la organización que publica y actualiza la guía PMBOK, encargada de promover las mejores prácticas en gestión de proyectos."
   },
   {
     question: "¿Cuántos grupos de procesos define el PMBOK?",
     options: ["4", "5", "6", "7"],
-    correct: 1,
-    explanation: "El PMBOK define cinco grupos de procesos: Inicio, Planificación, Ejecución, Monitoreo y Cierre."
+    answer: 1,
+    feedback: "El PMBOK define cinco grupos de procesos: Inicio, Planificación, Ejecución, Monitoreo y Cierre."
   },
   {
     question: "¿Cuál de los siguientes es un área de conocimiento del PMBOK?",
-    options: ["Gestión del tiempo", "Gestión del sprint", "Gestión ágil", "Gestión emocional"],
-    correct: 0,
-    explanation: "La gestión del tiempo (ahora llamada gestión del cronograma) es una de las áreas clave de conocimiento del PMBOK."
+    options: [
+      "Gestión del tiempo",
+      "Gestión del sprint",
+      "Gestión ágil",
+      "Gestión emocional"
+    ],
+    answer: 0,
+    feedback: "La gestión del tiempo (ahora llamada gestión del cronograma) es una de las áreas clave de conocimiento del PMBOK."
   },
   {
     question: "¿Qué documento autoriza formalmente el inicio de un proyecto?",
@@ -41,38 +46,63 @@ const questions = [
       "Cronograma",
       "Informe de avance"
     ],
-    correct: 0,
-    explanation: "El acta de constitución autoriza formalmente el proyecto y otorga autoridad al director del proyecto."
+    answer: 0,
+    feedback: "El acta de constitución autoriza formalmente el proyecto y otorga autoridad al director del proyecto."
   },
   {
     question: "¿Qué herramienta se usa comúnmente para gestionar el cronograma en PMBOK?",
-    options: ["Diagrama de Gantt", "Backlog", "Kanban", "Scrum board"],
-    correct: 0,
-    explanation: "El diagrama de Gantt se usa en PMBOK para visualizar y controlar el cronograma del proyecto."
+    options: [
+      "Diagrama de Gantt",
+      "Backlog",
+      "Kanban",
+      "Scrum board"
+    ],
+    answer: 0,
+    feedback: "El diagrama de Gantt se usa en PMBOK para visualizar y controlar el cronograma del proyecto."
   },
   {
     question: "¿Qué área se encarga de asegurar que el proyecto cumpla con los requisitos establecidos?",
-    options: ["Gestión de calidad", "Gestión de recursos", "Gestión de comunicaciones", "Gestión de riesgos"],
-    correct: 0,
-    explanation: "La gestión de calidad se centra en cumplir los estándares definidos y satisfacer las expectativas del cliente."
+    options: [
+      "Gestión de calidad",
+      "Gestión de recursos",
+      "Gestión de comunicaciones",
+      "Gestión de riesgos"
+    ],
+    answer: 0,
+    feedback: "La gestión de calidad se centra en cumplir los estándares definidos y satisfacer las expectativas del cliente."
   },
   {
     question: "¿Qué proceso implica monitorear el progreso y desempeño del proyecto?",
-    options: ["Controlar el trabajo del proyecto", "Dirigir y gestionar el trabajo", "Cerrar el proyecto", "Identificar interesados"],
-    correct: 0,
-    explanation: "Controlar el trabajo del proyecto implica comparar el desempeño real con el plan y aplicar acciones correctivas si es necesario."
+    options: [
+      "Controlar el trabajo del proyecto",
+      "Dirigir y gestionar el trabajo",
+      "Cerrar el proyecto",
+      "Identificar interesados"
+    ],
+    answer: 0,
+    feedback: "Controlar el trabajo del proyecto implica comparar el desempeño real con el plan y aplicar acciones correctivas si es necesario."
   },
   {
     question: "¿Qué grupo de procesos se ejecuta más veces durante el ciclo de vida del proyecto?",
-    options: ["Inicio", "Cierre", "Monitoreo y control", "Planificación"],
-    correct: 2,
-    explanation: "El monitoreo y control se realiza de forma continua para asegurar que el proyecto se mantenga en línea con los objetivos."
+    options: [
+      "Inicio",
+      "Cierre",
+      "Monitoreo y control",
+      "Planificación"
+    ],
+    answer: 2,
+    feedback: "El monitoreo y control se realiza de forma continua para asegurar que el proyecto se mantenga en línea con los objetivos."
   },
   {
     question: "¿Qué área gestiona la relación y comunicación con los interesados del proyecto?",
-    options: ["Gestión de interesados", "Gestión de integración", "Gestión de comunicaciones", "Gestión de riesgos"],
-    correct: 0,
-    explanation: "Esta área se enfoca en identificar, analizar y gestionar las expectativas e influencia de los interesados."
+    options: [
+      "Gestión de interesados",
+      "Gestión de integración",
+      "Gestión de comunicaciones",
+      "Gestión de riesgos"
+    ],
+    answer: 0,
+    feedback: "Esta área se enfoca en identificar, analizar y gestionar las expectativas e influencia de los interesados."
   },
   {
     question: "¿Cuál es el objetivo principal de la gestión del alcance en un proyecto?",
@@ -82,8 +112,8 @@ const questions = [
       "Controlar los costos del proyecto",
       "Evaluar los riesgos potenciales"
     ],
-    correct: 1,
-    explanation: "La gestión del alcance busca garantizar que se incluya todo el trabajo necesario para completar el proyecto con éxito, sin tareas adicionales."
+    answer: 1,
+    feedback: "La gestión del alcance busca garantizar que se incluya todo el trabajo necesario para completar el proyecto con éxito, sin tareas adicionales."
   },
   {
     question: "¿Qué documento define cómo se ejecutará, monitoreará y controlará el proyecto?",
@@ -93,8 +123,8 @@ const questions = [
       "Registro de interesados",
       "Declaración de alcance"
     ],
-    correct: 1,
-    explanation: "El plan para la dirección del proyecto es la guía principal que describe cómo se ejecutará y controlará el proyecto."
+    answer: 1,
+    feedback: "El plan para la dirección del proyecto es la guía principal que describe cómo se ejecutará y controlará el proyecto."
   },
   {
     question: "¿Cuál de los siguientes procesos pertenece al grupo de procesos de planificación?",
@@ -104,14 +134,19 @@ const questions = [
       "Controlar los riesgos",
       "Cerrar el proyecto"
     ],
-    correct: 1,
-    explanation: "‘Definir las actividades’ forma parte de la planificación, donde se descomponen los entregables en tareas específicas."
+    answer: 1,
+    feedback: "‘Definir las actividades’ forma parte de la planificación, donde se descomponen los entregables en tareas específicas."
   },
   {
     question: "¿Qué herramienta se usa comúnmente para identificar riesgos en un proyecto?",
-    options: ["Diagrama de Gantt", "Análisis DAFO", "Lluvia de ideas", "Matriz RACI"],
-    correct: 2,
-    explanation: "La lluvia de ideas permite identificar de manera colaborativa posibles riesgos del proyecto con la participación del equipo."
+    options: [
+      "Diagrama de Gantt",
+      "Análisis DAFO",
+      "Lluvia de ideas",
+      "Matriz RACI"
+    ],
+    answer: 2,
+    feedback: "La lluvia de ideas permite identificar de manera colaborativa posibles riesgos del proyecto con la participación del equipo."
   },
   {
     question: "¿Qué representa la línea base del cronograma?",
@@ -121,14 +156,19 @@ const questions = [
       "Las restricciones del proyecto",
       "El plan de comunicación"
     ],
-    correct: 0,
-    explanation: "La línea base del cronograma muestra el plan aprobado con fechas y duración esperadas para comparar el progreso real."
+    answer: 0,
+    feedback: "La línea base del cronograma muestra el plan aprobado con fechas y duración esperadas para comparar el progreso real."
   },
   {
     question: "¿Qué proceso implica aceptar formalmente los entregables del proyecto?",
-    options: ["Controlar la calidad", "Validar el alcance", "Cerrar el proyecto", "Gestionar la configuración"],
-    correct: 1,
-    explanation: "‘Validar el alcance’ implica la aceptación formal de los entregables por parte del cliente o patrocinador."
+    options: [
+      "Controlar la calidad",
+      "Validar el alcance",
+      "Cerrar el proyecto",
+      "Gestionar la configuración"
+    ],
+    answer: 1,
+    feedback: "‘Validar el alcance’ implica la aceptación formal de los entregables por parte del cliente o patrocinador."
   },
   {
     question: "¿Cuál es una herramienta usada en la gestión de costos del proyecto?",
@@ -138,8 +178,8 @@ const questions = [
       "Registro de lecciones aprendidas",
       "Gráfica de Pareto"
     ],
-    correct: 0,
-    explanation: "El análisis del valor ganado mide el desempeño del costo y el cronograma comparando el progreso real con el planificado."
+    answer: 0,
+    feedback: "El análisis del valor ganado mide el desempeño del costo y el cronograma comparando el progreso real con el planificado."
   },
   {
     question: "¿Cuál de los siguientes documentos se utiliza para identificar y analizar a las partes interesadas del proyecto?",
@@ -149,8 +189,8 @@ const questions = [
       "Acta de constitución del proyecto",
       "Cronograma del proyecto"
     ],
-    correct: 0,
-    explanation: "El registro de interesados documenta la información relevante de las partes interesadas, sus intereses, poder e influencia en el proyecto."
+    answer: 0,
+    feedback: "El registro de interesados documenta la información relevante de las partes interesadas, sus intereses, poder e influencia en el proyecto."
   },
   {
     question: "¿Qué conocimiento es esencial para manejar cambios en un proyecto?",
@@ -160,8 +200,8 @@ const questions = [
       "Gestión de adquisiciones",
       "Gestión de la calidad"
     ],
-    correct: 1,
-    explanation: "La gestión de la integración coordina todos los elementos del proyecto y es clave para manejar cambios de manera controlada."
+    answer: 1,
+    feedback: "La gestión de la integración coordina todos los elementos del proyecto y es clave para manejar cambios de manera controlada."
   },
   {
     question: "¿Qué proceso pertenece al grupo de procesos de cierre según PMBOK?",
@@ -171,63 +211,124 @@ const questions = [
       "Cerrar el proyecto o fase",
       "Desarrollar el acta de constitución"
     ],
-    correct: 2,
-    explanation: "Cerrar el proyecto o fase incluye obtener la aceptación final y documentar las lecciones aprendidas."
+    answer: 2,
+    feedback: "Cerrar el proyecto o fase incluye obtener la aceptación final y documentar las lecciones aprendidas."
   }
 ];
 
 let currentQuestion = 0;
 let score = 0;
+let incorrectAnswers = [];
 
 const questionContainer = document.getElementById("question-container");
+const questionText = document.getElementById("question-text");
+const optionsContainer = document.getElementById("options-container");
 const nextBtn = document.getElementById("next-btn");
+const resultContainer = document.getElementById("result-container");
+const scoreText = document.getElementById("score");
+const incorrectList = document.getElementById("incorrect-answers");
 const progressBar = document.getElementById("progress-bar");
+const progressText = document.getElementById("progress-text");
 
-function showQuestion() {
-  const q = questions[currentQuestion];
-  progressBar.style.width = `${((currentQuestion) / questions.length) * 100}%`;
+// ======== FUNCIONES ========
 
-  questionContainer.innerHTML = `
-    <h2>Pregunta ${currentQuestion + 1} de ${questions.length}</h2>
-    <p>${q.question}</p>
-    ${q.options.map((opt, i) => `<div class="option" onclick="selectOption(${i})">${opt}</div>`).join('')}
-    <div id="explanation" class="explanation" style="display:none;"></div>
-  `;
+// Actualizar barra de progreso solo durante las preguntas
+function updateProgress() {
+  if (currentQuestion < questions.length) {
+    const total = questions.length;
+    const current = currentQuestion + 1;
+    const percent = (current / total) * 100;
 
-  nextBtn.disabled = true;
+    progressBar.style.width = `${percent}%`;
+    progressText.textContent = `Pregunta ${current} de ${total}`;
+  }
 }
 
-function selectOption(index) {
+// Mostrar pregunta actual
+function showQuestion() {
+  nextBtn.disabled = true;
   const q = questions[currentQuestion];
-  const options = document.querySelectorAll(".option");
-  const explanationDiv = document.getElementById("explanation");
+  questionText.textContent = q.question;
+  optionsContainer.innerHTML = "";
 
-  options.forEach((opt, i) => {
-    opt.onclick = null;
-    if (i === q.correct) opt.classList.add("correct");
-    else if (i === index) opt.classList.add("incorrect");
+  q.options.forEach((opt, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.classList.add("option");
+    btn.addEventListener("click", () => selectAnswer(index));
+    optionsContainer.appendChild(btn);
   });
 
-  if (index === q.correct) score += 5;
+  updateProgress(); // actualizar barra
+}
 
-  explanationDiv.style.display = "block";
-  explanationDiv.innerHTML = `<b>Explicación:</b> ${q.explanation}`;
+// Seleccionar respuesta
+function selectAnswer(selectedIndex) {
+  const q = questions[currentQuestion];
+  const buttons = document.querySelectorAll(".option");
+
+  buttons.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === q.answer) btn.classList.add("correct");
+    if (i === selectedIndex && i !== q.answer) btn.classList.add("incorrect");
+  });
+
+  const feedback = document.createElement("div");
+  feedback.classList.add("feedback");
+  feedback.textContent = q.feedback;
+  optionsContainer.appendChild(feedback);
+
+  if (selectedIndex === q.answer) score += 5;
+  else incorrectAnswers.push({
+    question: q.question,
+    correct: q.options[q.answer],
+    yourAnswer: q.options[selectedIndex]
+  });
+
   nextBtn.disabled = false;
 }
 
+// Siguiente pregunta
 nextBtn.addEventListener("click", () => {
   currentQuestion++;
   if (currentQuestion < questions.length) showQuestion();
   else showResult();
 });
 
+// Mostrar resultado final
 function showResult() {
-  progressBar.style.width = "100%";
-  questionContainer.innerHTML = `
-    <h2>¡Examen finalizado!</h2>
-    <p>Tu puntaje final es: <strong>${score} / ${questions.length * 5}</strong></p>
-  `;
-  nextBtn.style.display = "none";
+  questionContainer.classList.add("hidden");
+  resultContainer.classList.remove("hidden");
+  scoreText.textContent = `Tu puntaje final: ${score} / ${questions.length * 5}`;
+
+  // Llenar barra al 100% al finalizar
+  progressBar.style.width = `100%`;
+  progressText.textContent = "Examen completado";
+
+  if (incorrectAnswers.length > 0) {
+    incorrectList.innerHTML = "<h3>Preguntas incorrectas:</h3>";
+    incorrectAnswers.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("feedback");
+      div.innerHTML = `<b>${item.question}</b><br>
+      Tu respuesta: ${item.yourAnswer}<br>
+      Correcta: ${item.correct}`;
+      incorrectList.appendChild(div);
+    });
+  } else {
+    incorrectList.innerHTML = "<p>¡Felicidades! Todas las respuestas son correctas 🎉</p>";
+  }
 }
 
+// Reiniciar examen
+document.getElementById("restart-btn").addEventListener("click", () => {
+  currentQuestion = 0;
+  score = 0;
+  incorrectAnswers = [];
+  resultContainer.classList.add("hidden");
+  questionContainer.classList.remove("hidden");
+  showQuestion();
+});
+
+// Inicializar examen
 showQuestion();
