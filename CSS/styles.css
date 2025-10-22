@@ -1,86 +1,3 @@
-:root {
-    --primary-color: #137fec;
-    --secondary-color: #9cb3e0;
-    --primary-background-color: #dbeafe;
-    --background-color: #ffffff;
-    --background-color-alt: #f5f7fa;
-    --background-color-dark: #d5dfeb;
-    --text-color: #1d1d1d;
-    --secondary-text-color: #4b5563;
-    --hr: #e5e7eb;
-    --green-color: #22c55e;
-}
-
-body {
-    font-family: system-ui, sans-serif, 'Sansita';
-    /* use the variables defined above */
-    background-color: var(--background-color);
-    color: var(--text-color);
-    min-height: 100vh;
-}
-
-.svg-header {
-    height: 2rem;
-    width: 2rem;
-}
-
-body>header {
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    border-bottom: 2px solid var(--hr);
-    width: 100%;
-
-    div>h1 {
-        font-size: 1rem;
-        font-weight: 700;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-        gap: .8em;
-
-        a,
-        span {
-            padding: .5em;
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            font-size: .9rem;
-            cursor: pointer;
-            transition: .5s, color .10s;
-            -webkit-transition: .5s, color .10s;
-            -moz-transition: .5s, color .10s;
-        }
-
-        a:hover {
-            color: var(--primary-color);
-            font-weight: 700;
-            transform: translatey(-5px);
-            -webkit-transform: translatey(-5px);
-            -moz-transform: translatey(-5px);
-        }
-
-        span {
-            color: var(--secondary-color);
-        }
-    }
-}
-
-body>footer {
-    background-color: var(--background-color);
-    color: var(--secondary-text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    border-top: 2px solid var(--hr);
-    width: 100%;
-
-}
 
 .nav-buttons {
     display: flex;
@@ -120,17 +37,6 @@ body>footer {
                 fill: var(--primary-color);
             }
         }
-    }
-}
-
-.svg-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5em;
-
-    svg {
-        color: var(--primary-color);
     }
 }
 
@@ -351,6 +257,7 @@ body>footer {
         border-radius: 10px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         gap: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         .svg-text {
             display: flex;
@@ -407,6 +314,19 @@ body>footer {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+    }
+
+    p {
+        color: var(--secondary-text-color);
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .exam-card:hover {
@@ -431,19 +351,6 @@ body>footer {
     color: var(--primary-color);
 }
 
-.exam-card h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-}
-
-.exam-card p {
-    color: var(--secondary-text-color);
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-}
-
 .exam-button {
     display: inline-flex;
     align-items: center;
@@ -452,16 +359,16 @@ body>footer {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+
+    svg {
+    width: 18px;
+    height: 18px;
+}
 }
 
 .exam-button:hover {
     color: white;
     background-color: var(--primary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-}
-
-.exam-button .arrow {
-    width: 18px;
-    height: 18px;
 }
