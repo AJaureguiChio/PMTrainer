@@ -98,8 +98,7 @@ main {
 }
 
 /* ======== BOTONES ======== */
-.btn,
-a.btn {
+.btn{
     padding: 10px 20px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -116,16 +115,21 @@ a.btn {
     margin-top: 15px;
 }
 
-.btn:hover,
-a.btn:hover {
+.btn:hover {
     background-color: var(--green-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-return:hover{
+    background-color: var(--red-color);
+    transform: translateY(2px);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .25);
 }
 
 /* ======== BOTÓN SIGUIENTE ======== */
 #next-btn {
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 /* ======== RESULTADO FINAL ======== */
