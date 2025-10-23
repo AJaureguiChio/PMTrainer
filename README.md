@@ -60,7 +60,7 @@ Para el momento del segundo sprint, estos archivos cambiarán a los siguente:
 
 ### Selector de exámenes
 
-![Selector de exámenes]((https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image-3.png))
+![Selector de exámenes](https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image-3.png)
 
 ## Recursos
 
