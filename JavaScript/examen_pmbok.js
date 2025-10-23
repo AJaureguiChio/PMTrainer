@@ -220,6 +220,9 @@ let currentQuestion = 0;
 let score = 0;
 let incorrectAnswers = [];
 
+// Calcular puntos por pregunta para que el total sea 100
+const POINTS_PER_QUESTION = questions.length > 0 ? 100 / questions.length : 0;
+
 const questionContainer = document.getElementById("question-container");
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
@@ -278,7 +281,7 @@ function selectAnswer(selectedIndex) {
   feedback.textContent = q.feedback;
   optionsContainer.appendChild(feedback);
 
-  if (selectedIndex === q.answer) score += 5;
+  if (selectedIndex === q.answer) score += POINTS_PER_QUESTION;
   else incorrectAnswers.push({
     question: q.question,
     correct: q.options[q.answer],
@@ -299,7 +302,11 @@ nextBtn.addEventListener("click", () => {
 function showResult() {
   questionContainer.classList.add("hidden");
   resultContainer.classList.remove("hidden");
-  scoreText.textContent = `Tu puntaje final: ${score} / ${questions.length * 5}`;
+  // Mostrar puntuación con máximo basado en la cantidad de preguntas
+  const maxScore = questions.length * POINTS_PER_QUESTION;
+  // Redondear a 2 decimales si es necesario
+  const round = num => Math.round(num * 100) / 100;
+  scoreText.textContent = `Tu puntaje final: ${round(score)} / ${round(maxScore)}`;
 
   // Llenar barra al 100% al finalizar
   progressBar.style.width = `100%`;
