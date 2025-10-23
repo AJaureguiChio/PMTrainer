@@ -19,14 +19,6 @@
     --bg-feedback: #d1e6fc;
 }
 
-body {
-    font-family: system-ui, sans-serif, 'Sansita', 'Segoe UI', Tahoma, Geneva, Verdana;
-    /* use the variables defined above */
-    background-color: var(--background-color);
-    color: var(--text-color);
-    min-height: 100vh;
-}
-
 .svg-header {
     height: 2rem;
     width: 2rem;

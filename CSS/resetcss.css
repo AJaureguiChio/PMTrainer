@@ -25,7 +25,7 @@ body {
     line-height: 1.5;
   /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
-    font-family: system-ui, sans-serif, 'Sansita';
+    font-family: system-ui, sans-serif, 'Sansita', 'Segoe UI', Tahoma, Geneva, Verdana;
     /* use the variables defined above */
     background-color: var(--background-color);
     color: var(--text-color);
