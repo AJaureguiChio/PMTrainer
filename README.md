@@ -56,12 +56,12 @@ Para el momento del segundo sprint, estos archivos cambiarán a los siguente:
 ## Capturas de pantalla de la plataforma:
 
 ### Incio
-![Inicio](image.png)![Inicio](image-1.png)![alt text](image-2.png)
+![Inicio](https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image.png)![Inicio](https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image-1.png)![Inicio](https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image-2.png)
 
 ### Selector de exámenes
 
-![Selector de exámenes](image-3.png)
+![Selector de exámenes]((https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image-3.png))
 
 ## Recursos
 
-![alt text](image-4.png)
+![Recursos](https://github.com/AJaureguiChio/PMTrainer/blob/main/images/image-4.png)
