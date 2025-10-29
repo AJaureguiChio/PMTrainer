@@ -1,4 +1,4 @@
-const questions = [
+let PMBOK = [
   {
     question: "¿Cuál es el objetivo principal del PMBOK?",
     options: [
@@ -215,3 +215,21 @@ const questions = [
     feedback: "Cerrar el proyecto o fase incluye obtener la aceptación final y documentar las lecciones aprendidas."
   }
 ];
+
+const urlParams = new URLSearchParams(window.location.search)
+questions = urlParams.get('examen')
+
+switch (questions) {
+        case 'PMBOK':
+            console.log('Has seleccionado el exaem PMBOK');
+            questions = PMBOK
+            break; 
+        case 'SCRUM':
+            console.log('Has seleccionado el exaem SCRUM');
+            break;
+        default:
+            console.log(`pelaste mano el examen "${urlParams.get('examen')}" no está en la DB de momento`);
+            questions = 0
+            break;
+    }
+
