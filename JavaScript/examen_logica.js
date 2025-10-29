@@ -1,3 +1,13 @@
+
+document.addEventListener('DOMContentLoaded', () =>{
+    if(questions === 0){
+        alert("No existe este examen")
+        return;
+    }
+
+    showQuestion();
+})
+
 let currentQuestion = 0;
 let score = 0;
 let incorrectAnswers = [];
@@ -118,5 +128,3 @@ document.getElementById("restart-btn").addEventListener("click", () => {
     questionContainer.classList.remove("hidden");
     showQuestion();
 });
-
-showQuestion();
