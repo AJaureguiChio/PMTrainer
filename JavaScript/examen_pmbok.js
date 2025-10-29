@@ -1,4 +1,4 @@
-let PMBOK = [
+const PMBOK = [
   {
     question: "¿Cuál es el objetivo principal del PMBOK?",
     options: [
