@@ -29,7 +29,17 @@ body {
     /* use the variables defined above */
     background-color: var(--background-color);
     color: var(--text-color);
-    min-height: 100vh;
+    min-height: 100vh; /* Para navegadores antiguos */
+    min-height: 100dvh;
+
+    /* USAR ESTA OPCIÓN SI TIENES HTML TIPO
+        <HEADER>
+        <MAIN>
+        <FOOTER>
+    */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
 }
 
 /* 6. Improve media defaults */
