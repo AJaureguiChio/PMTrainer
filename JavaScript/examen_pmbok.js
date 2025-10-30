@@ -1,4 +1,4 @@
-const PMBOK = [
+const pmbok = [
   {
     question: "¿Cuál es el objetivo principal del PMBOK?",
     options: [
@@ -216,7 +216,7 @@ const PMBOK = [
   }
 ];
 
-const SCRUM = [
+const scrum = [
   {
     question: "¿Qué es Scrum?",
     options: [
@@ -336,13 +336,13 @@ const urlParams = new URLSearchParams(window.location.search)
 questions = urlParams.get('examen')
 
 switch (questions) {
-        case 'PMBOK':
-            console.log('Has seleccionado el exaem PMBOK');
-            questions = PMBOK
+        case 'pmbok':
+            console.log('Has seleccionado el exaem pmbok');
+            questions = pmbok
             break; 
-        case 'SCRUM':
+        case 'scrum':
             console.log('Has seleccionado el exaem SCRUM');
-            questions = SCRUM
+            questions = scrum
             break;
         default:
             console.log(`pelaste mano el examen "${urlParams.get('examen')}" no está en la DB de momento`);
