@@ -1,4 +1,3 @@
-
 main {
     flex: 1;
     display: flex;
@@ -14,8 +13,7 @@ main {
     background-color: var(--bg-container);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 600px;
+    aspect-ratio: 12/9;
     padding: 30px;
     text-align: center;
     display: flex;
