@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () =>{
     if(questions === 0){
-        alert("No existe este examen")
+        alert("Examen no encontrado}")
         return;
     }
 

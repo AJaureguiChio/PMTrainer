@@ -216,6 +216,122 @@ const PMBOK = [
   }
 ];
 
+const SCRUM = [
+  {
+    question: "¿Qué es Scrum?",
+    options: [
+      "Una metodología tradicional",
+      "Un marco de trabajo ágil",
+      "Un software de gestión",
+      "Un tipo de diagrama"
+    ],
+    answer: 1,
+    feedback: "Scrum es un marco de trabajo ágil usado para desarrollar proyectos de manera iterativa e incremental.",
+  },
+  {
+    question: "¿Qué rol se encarga de eliminar los impedimentos del equipo Scrum?",
+    options: [
+      "Product Owner",
+      "Scrum Master",
+      "Project Manager",
+      "Desarrollador"
+    ],
+    answer: 1,
+    feedback: "El Scrum Master apoya al equipo eliminando obstáculos que impiden el progreso del sprint.",
+  },
+  {
+    question: "¿Cuál es la duración recomendada de un sprint?",
+    options: [
+      "1 día",
+      "1 a 4 semanas",
+      "6 semanas",
+      "3 meses"
+    ],
+    answer: 1,
+    feedback: "Los sprints son ciclos cortos de trabajo que duran entre una y cuatro semanas, según la complejidad del proyecto.",
+  },
+  {
+    question: "¿Qué documento contiene la lista priorizada de requerimientos del producto?",
+    options: [
+      "Product Backlog",
+      "Sprint Backlog",
+      "Incremento",
+      "Roadmap"
+    ],
+    answer: 0,
+    feedback: "El Product Backlog contiene todas las funcionalidades requeridas, priorizadas por el Product Owner.",
+  },
+  {
+    question: "¿Qué evento marca el inicio de un sprint?",
+    options: [
+      "Sprint Review",
+      "Sprint Planning",
+      "Daily Scrum",
+      "Retrospective"
+    ],
+    answer: 1,
+    feedback: "El Sprint Planning define qué se va a realizar en el sprint y cómo se hará.",
+  },
+  {
+    question: "¿Cuánto dura normalmente el Daily Scrum?",
+    options: [
+      "15 minutos",
+      "1 hora",
+      "30 minutos",
+      "No tiene límite"
+    ],
+    answer: 0,
+    feedback: "La reunión diaria dura 15 minutos y sirve para sincronizar el trabajo del equipo y planear el día.",
+  },
+  {
+    question: "¿Quién es responsable del valor del producto en Scrum?",
+    options: [
+      "Scrum Master",
+      "Product Owner",
+      "Equipo de desarrollo",
+      "Stakeholders"
+    ],
+    answer: 1,
+    feedback: "El Product Owner gestiona el Product Backlog y asegura que el producto entregue el mayor valor posible.",
+  },
+  {
+    question: "¿Qué artefacto muestra el progreso durante el sprint?",
+    options: [
+      "Burndown Chart",
+      "Product Backlog",
+      "Roadmap",
+      "Retrospective"
+    ],
+    answer: 0,
+    feedback: "El Burndown Chart muestra gráficamente la cantidad de trabajo restante a lo largo del sprint.",
+  },
+  {
+    question: "¿Qué evento se realiza al final del sprint para inspeccionar el incremento?",
+    options: [
+      "Sprint Retrospective",
+      "Sprint Review",
+      "Daily Scrum",
+      "Planning"
+    ],
+    answer: 1,
+    feedback: "En la Sprint Review se revisa el incremento completado y se recibe retroalimentación de los interesados.",
+  },
+  {
+    question: "¿Cuál es el propósito de la Sprint Retrospective?",
+    options: [
+      "Revisar el producto",
+      "Planear el siguiente sprint",
+      "Mejorar el proceso del equipo",
+      "Reportar errores"
+    ],
+    answer: 2,
+    feedback: "En la retrospectiva el equipo analiza qué funcionó bien y qué puede mejorar para el próximo sprint.",
+  }
+]
+
+// Lectura de URL y selección de exámen
+// para procesar despues en la lógica
+
 const urlParams = new URLSearchParams(window.location.search)
 questions = urlParams.get('examen')
 
@@ -226,6 +342,7 @@ switch (questions) {
             break; 
         case 'SCRUM':
             console.log('Has seleccionado el exaem SCRUM');
+            questions = SCRUM
             break;
         default:
             console.log(`pelaste mano el examen "${urlParams.get('examen')}" no está en la DB de momento`);
