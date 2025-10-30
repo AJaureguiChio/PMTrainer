@@ -8,6 +8,7 @@
     --text-color: #1d1d1d;
     --secondary-text-color: #4b5563;
     --hr: #e5e7eb;
+    --dark-hr: #cbced4;
 
     /* Colores del container de los exámenes */
     --green-color: #22c55e;
@@ -87,7 +88,11 @@ body>footer {
     align-items: center;
     justify-content: center;
     padding: 1em;
-    border-top: 2px solid var(--hr);
+    border-top: 2px solid var(--dark-hr);
     width: 100%;
 
+}
+
+body>main{
+    background-color: var(--primary-background-color);
 }
