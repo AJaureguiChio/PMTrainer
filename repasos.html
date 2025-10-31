@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="¡Practica los temas de cada metodología antes de presentar el examen completo!">
+    <meta name="description" content="¡Practica los temas de cada metodología antes de presentar el examen completo!">
     <title>PmTrainer - Repasos</title>
     <link rel="icon" type="image/x-icon" href="logos/pie-chart.ico">
     <link rel="stylesheet" href="CSS/resetcss.css">
@@ -40,65 +39,51 @@
         <section class="center background-alt">
             <article class="center hero-text">
                 <h1>Repaso Rápido</h1>
-                <p>Afina tus habilidades con un cuestionario rápido. Elige un grupo de preguntas al azar o enfócate en témas específicos</p>
+                <p>Afina tus habilidades con un cuestionario rápido. Elige un grupo de preguntas al azar o enfócate en
+                    témas específicos</p>
             </article>
         </section>
 
         <section class="cuestionario">
             <h2>Configuración del Cuestionario</h2>
-            
+
             <form action="post">
                 <label for="metodologia">Metodología</label>
                 <select name="metodologia" id="metodologia">
-                    <option value="todos" selected>Cualquiera</option>
+                    <option value="todos">Cualquiera</option>
+                    <hr>
                     <option value="pmbok">PMBOK</option>
                     <option value="scrum">SCRUM</option>
                 </select>
-                <label for="">asdf</label>
+
+                <!-- <label for="preguntas">Número mínimo de preguntas</label>
+                <input type="range" list="items" min="1" max="10" value="5">
+                <output></output>
+                <datalist id="items">
+                    <option value="1"><= 1 </option>
+                    <option value="2"><= 2</option>
+                    <option value="3"><= 3</option>
+                    <option value="4"><= 4</option>
+                    <option value="5"><= 5</option>
+                    <option value="6"><= 6</option>
+                    <option value="7"><= 7</option>
+                    <option value="8"><= 8</option>
+                    <option value="9"><= 9</option>
+                    <option value="10"><= 10</option>
+                </datalist> -->
+
+                <label for="titulo">Título</label>
+                <select name="titulo" id="titulo">
+                    <option value="todos">Cualquiera</option>
+                    <hr>
+                    <!-- Títulos de cada examen -->
+                </select>
             </form>
         </section>
 
-        <section class="contenedor-repasos">
-            <article class="card-repasos">
-                <p>Procesos y grupos de procesos del PMBOK 6ª edición</p>
-                <a href="#" class="exam-button">
-                    Comenzar examen
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </article>
-            <article class="card-repasos">
-                <p>Áreas de conocimiento</p>
-                <a href="#" class="exam-button">
-                    Comenzar examen
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </article>
-            <article class="card-repasos">
-                <p>Roles, herramientas y documentos del proyecto </p>
-                <a href="#" class="exam-button">
-                    Comenzar examen
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </article>
-            <article class="card-repasos">
-                <p>Hola</p>
-                <a href="#" class="exam-button">
-                    Comenzar examen
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </article>
+        <section class="contenedor-repasos" id="resultado">
+            <!-- Resultado de la búsqueda del tipo de examen -->
+
         </section>
 
     </main>
@@ -110,4 +95,5 @@
     <script src="JavaScript/DB/temasDB.js"></script>
     <script src="JavaScript/temas_logica.js"></script>
 </body>
+
 </html>

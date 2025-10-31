@@ -337,11 +337,11 @@ questions = urlParams.get('examen')
 
 switch (questions) {
         case 'pmbok':
-            console.log('Has seleccionado el exaem pmbok');
+            console.log('Has seleccionado el examen pmbok');
             questions = pmbok
             break; 
         case 'scrum':
-            console.log('Has seleccionado el exaem SCRUM');
+            console.log('Has seleccionado el examen SCRUM');
             questions = scrum
             break;
         default:
