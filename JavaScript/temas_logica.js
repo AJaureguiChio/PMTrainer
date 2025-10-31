@@ -54,9 +54,10 @@ function mostrarTemas(lista){
 
     lista.forEach(tema =>{
         const temaHTML = document.createElement('article')
-        const {titulo, param} = tema
+        const {titulo, param, metodologia} = tema
         
         temaHTML.classList.add("card-repasos")
+        temaHTML.classList.add(metodologia)
         temaHTML.innerHTML = `
             <p>${titulo}</p>
                 <a href="examPage.html?examen=${param}" class="exam-button">
