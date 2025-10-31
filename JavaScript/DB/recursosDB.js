@@ -35,7 +35,7 @@ const recursos = [
         link: "https://www.scrum.org/",
         nombre: "Guía Oficial de Scrum",
         descripcion: "The Scrum Guide. Ken Schwaber & Jeff Sutherland",
-        metodologia: 2
+        metodologia: "SCRUM"
     },
     {
         tipo: "articulo",
@@ -54,7 +54,7 @@ const recursos = [
         link: "https://scrumguides.org/scrum-guide.html",
         nombre: "Guía de Scrum",
         descripcion: "La guía definitva de SCRUM",
-        metodologia: 2
+        metodologia: "SCRUM"
     },
     {
         tipo: "articulo",
@@ -73,7 +73,7 @@ const recursos = [
         link: "https://www.atlassian.com/agile/scrum",
         nombre: "¿Qué es scrum y como empezar?",
         descripcion: "Guía Scrum - Qué es, como funciona y como empezar",
-        metodologia: 2
+        metodologia: "SCRUM"
     },
 
     // ─── Libros ────────────────────────────────────────────────
@@ -96,7 +96,7 @@ const recursos = [
         link: "https://www.pmi.org/standards/pmbok#:~:text=te%20puede%20interesar-,Descripci%C3%B3n%20general,los%20r%C3%A1pidos%20cambios%20del%20mercado",
         nombre: "Project Management Institute. (2021)",
         descripcion: "Guía de los Fundamentos para la Dirección de Proyectos (PMBOK® Guide) – 7ma Edición.",
-        metodologia: 1
+        metodologia: "PMBOK"
     },
     {
         tipo: "libro",
@@ -116,7 +116,7 @@ const recursos = [
         link: "https://www.amazon.com.mx/Fast-Forward-Project-Management-Comprehensive/dp/1119700760",
         nombre: "The Fast Forward MBA in Project Management. 6ª edición",
         descripcion: "El MBA de avance rápido en gestión de proyectos: el manual completo y fácil de leer para principiantes y profesionales",
-        metodologia: 1
+        metodologia: "PMBOK"
     },
     {
         tipo: "libro",
@@ -136,7 +136,7 @@ const recursos = [
         link: "https://www.amazon.com.mx/Essential-Scrum-Practical-Addison-Wesley-Signature-ebook/dp/B0DG6DTFLL/ref=sr_1_1",
         nombre: "Essential Scrum: A Practical Guide to the Most Popular Agile Process",
         descripcion: "Guía completa y de una sola fuente sobre Scrum para todos los miembros del equipo, gerentes y ejecutivos",
-        metodologia: 2
+        metodologia: "SCRUM"
     },
     {
         tipo: "libro",
@@ -156,7 +156,7 @@ const recursos = [
         link: "https://www.amazon.com.mx/Succeeding-Agile-Software-Development-Using/dp/0321579364",
         nombre: "Succeeding with Agile: Software Development Using Scrum",
         descripcion: "Guía probada y 100 % práctica para hacer que Scrum y Agile funcionen en cualquier organización",
-        metodologia: 2
+        metodologia: "SCRUM"
     },
 
     // ─── Videos ────────────────────────────────────────────────

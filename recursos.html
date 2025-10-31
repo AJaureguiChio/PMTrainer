@@ -42,12 +42,32 @@
                 <p>¡Encuentra los mejores materiales de estudio para aprender <span>PMBOK</span> y <span>SCRUM</span> y
                     prepárate para los examenes completos o de repaso!</p>
             </article>
-            <form action="" method="get" class="center search-form">
+            <!-- <form action="" method="get" class="center search-form">
                 <input type="text" name="search" id="search" placeholder="🔍 Buscar recursos por palabra clave">
-            </form>
+            </form> -->
         </section>
 
-        <!-- <h2>Categorías</h2> -->
+        <section class="cuestionario">
+            <h2>Configuración del Cuestionario</h2>
+
+            <form>
+                <label for="metodologia">Metodología</label>
+                <select name="metodologia" id="metodologia">
+                    <option value="todos">Cualquiera</option>
+                    <hr>
+                    <option value="PMBOK">PMBOK</option>
+                    <option value="SCRUM">SCRUM</option>
+                </select>
+
+                <label for="tipo">Tipo</label>
+                <select name="tipo" id="tipo">
+                    <option value="todos">Cualquiera</option>
+                    <hr>
+                    <option value="articulo">Artículos</option>
+                    <option value="libro">Libros</option>
+                </select>
+            </form>
+        </section>
 
         <section id="contenedor-recursos" class="contenedor-recursos">
             
