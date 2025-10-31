@@ -1,5 +1,5 @@
 main {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,15 +10,15 @@ main {
 
 /* ======== CONTENEDOR DEL EXAMEN ======== */
 .container {
-    background-color: var(--bg-container);
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    aspect-ratio: 12/9;
-    padding: 30px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 30px;
+    min-width: 60rem;
+    background-color: var(--bg-container);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* ======== BARRA DE PROGRESO ======== */

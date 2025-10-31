@@ -82,15 +82,15 @@ body>header {
 }
 
 body>footer {
-    background-color: var(--background-color);
+    background-color: var(--background-color-alt);
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1em;
-    border-top: 2px solid var(--dark-hr);
+    /* border-top: 2px solid var(--dark-hr); */
     width: 100%;
-
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 body>main{

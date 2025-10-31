@@ -36,6 +36,28 @@
     </header>
 
     <main>
+
+        <section class="center background-alt">
+            <article class="center hero-text">
+                <h1>Repaso Rápido</h1>
+                <p>Afina tus habilidades con un cuestionario rápido. Elige un grupo de preguntas al azar o enfócate en témas específicos</p>
+            </article>
+        </section>
+
+        <section class="cuestionario">
+            <h2>Configuración del Cuestionario</h2>
+            
+            <form action="post">
+                <label for="metodologia">Metodología</label>
+                <select name="metodologia" id="metodologia">
+                    <option value="todos" selected>Cualquiera</option>
+                    <option value="pmbok">PMBOK</option>
+                    <option value="scrum">SCRUM</option>
+                </select>
+                <label for="">asdf</label>
+            </form>
+        </section>
+
         <section class="contenedor-repasos">
             <article class="card-repasos">
                 <p>Procesos y grupos de procesos del PMBOK 6ª edición</p>
@@ -78,11 +100,14 @@
                 </a>
             </article>
         </section>
+
     </main>
 
     <footer>
         <small>&copy; 2025 PMTrainer. Todos los derechos reservados.</small>
     </footer>
-</body>
 
+    <script src="JavaScript/DB/temasDB.js"></script>
+    <script src="JavaScript/temas_logica.js"></script>
+</body>
 </html>
