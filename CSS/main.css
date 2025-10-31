@@ -90,7 +90,7 @@ body>footer {
     padding: 1em;
     /* border-top: 2px solid var(--dark-hr); */
     width: 100%;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.12);
 }
 
 body>main{
