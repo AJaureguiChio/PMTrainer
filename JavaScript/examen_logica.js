@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search)
     // questions = urlParams.get('examen')
     
-    fetch('../json/examenes.json').then(response => response.json())
+    fetch('json/examenes.json').then(response => response.json())
     .then(data => {
         try{
             const exam = urlParams.get('examen');
@@ -24,56 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             questions = 0
         }
     })
-
-    // switch (questions) {
-    //     case 'pmbok':
-    //         questions = pmbok
-    //         break;
-    //     case 'scrum':
-    //         questions = scrum
-    //         break;
-    //     case 'pmbokarea1':
-    //         questions = pmbokarea1
-    //         break;
-    //     case 'pmbokarea2':
-    //         questions = pmbokarea2
-    //         break;
-    //     case 'pmbokarea3':
-    //         questions = pmbokarea3
-    //         break;
-    //     case 'pmbokarea4':
-    //         questions = pmbokarea4
-    //         break;
-    //     case 'pmbokarea5':
-    //         questions = pmbokarea5
-    //         break;
-    //     case 'pmbokarea6':
-    //         questions = pmbokarea6
-    //         break;
-    //     case 'scrumarea1':
-    //         questions = scrumarea1
-    //         break;
-    //     case 'scrumarea2':
-    //         questions = scrumarea2
-    //         break;
-    //     case 'scrumarea3':
-    //         questions = scrumarea3
-    //         break;
-    //     case 'scrumarea4':
-    //         questions = scrumarea4
-    //         break;
-    //     case 'scrumarea5':
-    //         questions = scrumarea5
-    //         break;
-    //     default:
-    //         console.error(`No encontramos el examen "${urlParams.get('examen')}"`);
-    //         alert('Examen no encontrado. Serás redirigido a la página principal.');
-    //         window.location.href = 'index.html';
-    //         questions = 0
-    //         break;
-    // }
-    
-    // showQuestion();
 })
 
 
