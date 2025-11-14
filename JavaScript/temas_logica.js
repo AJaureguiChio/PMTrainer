@@ -15,6 +15,7 @@
 const resultado = document.querySelector("#resultado")
 const metodologia = document.querySelector("#metodologia")
 const titulo = document.querySelector("#titulo")
+const examenAleatorio = document.querySelector('#examen-aleatorio')
 
 // Objetos
 
@@ -47,6 +48,9 @@ titulo.addEventListener('change', e =>{
     filtros()
 })
 
+examenAleatorio.addEventListener('click', () =>{
+    TemaRandom();
+});
 // Funciones
 
 function mostrarTemas(lista){
@@ -75,6 +79,11 @@ function mostrarTemas(lista){
         `
         resultado.appendChild(temaHTML)
     })
+}
+
+function TemaRandom(){
+    const indice = Math.floor(Math.random() * temas.length);
+    window.location.href = `examPage.html?examen=${temas[indice].param}`
 }
 
 function llenarTitulos() {

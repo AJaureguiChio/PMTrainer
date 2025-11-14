@@ -456,6 +456,28 @@
     margin-top: 1rem;
 }
 
+.random-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1rem;
+    background-color: var(--green-color);
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    border: 2px solid var(--green-color);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, .3);
+    transition: ease all 0.3s;
+}
+
+.random-card:hover {
+    /* background-color: var(--primary-color); */
+    /* color: white; */
+    /* border: 2px solid var(--primary-color); */
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .4);
+}
+
 .card-repasos {
     display: flex;
     flex-direction: row;
