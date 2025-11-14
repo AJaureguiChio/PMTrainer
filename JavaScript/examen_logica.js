@@ -1,19 +1,87 @@
+questions = [];
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search)
+    // questions = urlParams.get('examen')
+    
+    fetch('../json/examenes.json').then(response => response.json())
+    .then(data => {
+        try{
+            const exam = urlParams.get('examen');
 
-document.addEventListener('DOMContentLoaded', () =>{
-    if(questions === 0){
-        alert("Examen no encontrado}")
-        return;
-    }
+            if(!data[exam]){
+                throw new Error(`Examen "${exam}" no encontrado.`)
+            }
 
-    showQuestion();
+            questions = data[exam];
+            console.log("Data:"+data);
+            console.log("Questions"+questions);
+            console.log("Exam"+exam);
+            
+            comienzoExamen();
+        }catch(error){
+            alert(error.message);
+            window.location.href = 'index.html';
+            questions = 0
+        }
+    })
+
+    // switch (questions) {
+    //     case 'pmbok':
+    //         questions = pmbok
+    //         break;
+    //     case 'scrum':
+    //         questions = scrum
+    //         break;
+    //     case 'pmbokarea1':
+    //         questions = pmbokarea1
+    //         break;
+    //     case 'pmbokarea2':
+    //         questions = pmbokarea2
+    //         break;
+    //     case 'pmbokarea3':
+    //         questions = pmbokarea3
+    //         break;
+    //     case 'pmbokarea4':
+    //         questions = pmbokarea4
+    //         break;
+    //     case 'pmbokarea5':
+    //         questions = pmbokarea5
+    //         break;
+    //     case 'pmbokarea6':
+    //         questions = pmbokarea6
+    //         break;
+    //     case 'scrumarea1':
+    //         questions = scrumarea1
+    //         break;
+    //     case 'scrumarea2':
+    //         questions = scrumarea2
+    //         break;
+    //     case 'scrumarea3':
+    //         questions = scrumarea3
+    //         break;
+    //     case 'scrumarea4':
+    //         questions = scrumarea4
+    //         break;
+    //     case 'scrumarea5':
+    //         questions = scrumarea5
+    //         break;
+    //     default:
+    //         console.error(`No encontramos el examen "${urlParams.get('examen')}"`);
+    //         alert('Examen no encontrado. Serás redirigido a la página principal.');
+    //         window.location.href = 'index.html';
+    //         questions = 0
+    //         break;
+    // }
+    
+    // showQuestion();
 })
+
+
 
 let currentQuestion = 0;
 let score = 0;
 let incorrectAnswers = [];
-
-// Calcular puntos por pregunta para que el total sea 100
-const POINTS_PER_QUESTION = questions.length > 0 ? 100 / questions.length : 0;
+let POINTS_PER_QUESTION = 0;
 
 const questionContainer = document.getElementById("question-container");
 const questionText = document.getElementById("question-text");
@@ -28,6 +96,18 @@ const progressText = document.getElementById("progress-text");
 // ======== FUNCIONES ========
 
 // Actualizar barra de progreso solo durante las preguntas
+
+function comienzoExamen()
+{
+    currentQuestion = 0;
+    score = 0;
+    incorrectAnswers = [];
+
+    // calcular puntos ya con questions cargado
+    POINTS_PER_QUESTION = 100 / questions.length;
+
+    showQuestion();
+}
 function updateProgress() {
     if (currentQuestion < questions.length) {
         const total = questions.length;
