@@ -24,11 +24,16 @@ const datosBusqueda = {
     preguntas: '',
     param: '',
 }
+let temas = []
 
 // eventos
 document.addEventListener('DOMContentLoaded', () =>{
-    mostrarTemas(temas);
-    llenarTitulos();
+    fetch("json/temas.json").then(response => response.json())
+        .then(data => {
+            temas = data.temas;
+            mostrarTemas(temas);
+            llenarTitulos();
+        })
 })
 
 metodologia.addEventListener('change', e =>{

@@ -2,28 +2,25 @@ questions = [];
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search)
     // questions = urlParams.get('examen')
-    
+
     fetch('json/examenes.json').then(response => response.json())
-    .then(data => {
-        try{
-            const exam = urlParams.get('examen');
+        .then(data => {
+            try {
+                const exam = urlParams.get('examen');
 
-            if(!data[exam]){
-                throw new Error(`Examen "${exam}" no encontrado.`)
+                if (!data[exam]) {
+                    throw new Error(`Examen "${exam}" no encontrado.`)
+                }
+
+                questions = data[exam];
+
+                comienzoExamen();
+            } catch (error) {
+                alert(error.message);
+                window.location.href = 'index.html';
+                questions = 0
             }
-
-            questions = data[exam];
-            console.log("Data:"+data);
-            console.log("Questions"+questions);
-            console.log("Exam"+exam);
-            
-            comienzoExamen();
-        }catch(error){
-            alert(error.message);
-            window.location.href = 'index.html';
-            questions = 0
-        }
-    })
+        })
 })
 
 
@@ -47,8 +44,7 @@ const progressText = document.getElementById("progress-text");
 
 // Actualizar barra de progreso solo durante las preguntas
 
-function comienzoExamen()
-{
+function comienzoExamen() {
     currentQuestion = 0;
     score = 0;
     incorrectAnswers = [];
